@@ -1,0 +1,27 @@
+<br/><h1>Create Account</h1><br/><br/><br/>
+<h2>Contact Info</h2><br/>
+<form >
+       
+        <label for="fullname">Full Name*</label> 
+        <input type="text" required name="fullnamename" [(ngModel)]="input.fullname" 
+        #firstname="ngModel"/><br />
+       <label for="phone">Phone*</label> 
+        <input type="text" required name="phone" [(ngModel)]="input.phone" 
+         #lastname="ngModel"/><br /><br/>
+        <h2>Login Info</h2><br/>
+         <label for="username">Username*</label> 
+         <input type="text" required name="username" [(ngModel)]="input.username" 
+         #username="ngModel"/><br />
+        <label for="password">Password*</label>
+        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter and one special character, and at least 8 or more characters" required [(ngModel)]="input.password" /><br />
+       <div id="demo"></div>
+   <label for="repeatpassword">Repeat Password*</label> 
+    <input type="password" required name="repeatpassword" [(ngModel)]="input.repeatpassword" 
+   #repeatpassword="ngModel"/><br/><br/>
+    <div id="test"></div>
+ <button type="button" class="button"(click)="register()">Register</button>
+</form>
+
+ <div id="details">
+    
+ </div>
